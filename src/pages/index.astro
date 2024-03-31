@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import QuienesSomos from "../components/QuienesSomos.astro";
+import Contaduria from "../components/Contaduria.astro";
+import Sectores from "../components/Sectores.astro";
+import SectorBancario from "../components/SectorBancario.astro";
+import SectorAgricola from "../components/SectorAgricola.astro";
+import SectorSeguros from "../components/SectorSeguros.astro";
+import SectorGubernamental from "../components/SectorGubernamental.astro";
+---
+
+<Layout title="Marce">
+  <div
+    class="inset-0 -z-10 w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"
+  >
+    <Hero />
+    <!-- <Navbar /> -->
+
+    <SectorBancario />
+    <SectorAgricola />
+    <SectorSeguros />
+    <SectorGubernamental/>
+
+  </div>
+</Layout>
+

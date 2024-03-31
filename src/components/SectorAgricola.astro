@@ -1,0 +1,44 @@
+---
+
+---
+
+<section class="bg-cyan-900 dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="max-w-screen-md mb-8 lg:mb-16">
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-[#a5e4fc] dark:text-white"
+      >
+        Sector Agricola
+      </h2>
+      <p class="text-gray-200 sm:text-xl dark:text-gray-400">
+        El sector agrario son todas aquellas empresas que se dedican a obtener productos agrícolas, o sea, al cultivo de la tierra con el fin de obtener materia prima de origen vegetal, alimentos, semillas, entre los que se encuentran, maíz, arroz, trigo, caña de azúcar entre otros. 
+      </p>
+
+      <a href="/sector-agricola" class="flex items-center gap-2 mt-4" id="inicioLink">
+        <span class="text-gray-300 font-bold"> Ver Mas... </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 text-gray-300 "
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+document.getElementById('inicioLink').addEventListener('click', function(event) {
+    // Guardar la posición de scroll actual en localStorage
+    localStorage.setItem('scrollPosition', window.scrollY);
+});
+</script>
