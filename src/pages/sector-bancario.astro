@@ -4,33 +4,29 @@ import Navbar from "../components/Navbar.astro";
 import NormasSectorBancario from "../components/NormasSectorBancario.astro";
 ---
 
-<Layout title="Marce">
-  
+<Layout title="La Casa De La  Contabilidad Especializada.">
   <section id="hero" class="flex justify-start items-center pl-4 lg:pl-16">
     <div>
-      <h1 class="text-white font-extrabold text-4xl">
-        Sector
-      </h1>
+      <h1 class="text-white font-extrabold text-4xl">Sector</h1>
       <h1
         class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl"
       >
         <span
           class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500"
         >
-           Bancario
+          Bancario
         </span>
       </h1>
       <p></p>
     </div>
   </section>
-  
-  <div class=" inset-0 -z-10  w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
-    
 
+  <div
+    class="inset-0 -z-10 w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"
+  >
     <Navbar />
     <NormasSectorBancario />
   </div>
-
 </Layout>
 
 <style>
@@ -45,10 +41,9 @@ import NormasSectorBancario from "../components/NormasSectorBancario.astro";
     background-position: bottom;
   }
 
-  @media (min-width: 1024px) { 
-    #hero{
-    height: 70vh;
-
+  @media (min-width: 1024px) {
+    #hero {
+      height: 70vh;
     }
   }
 </style>
