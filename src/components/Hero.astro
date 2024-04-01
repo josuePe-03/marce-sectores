@@ -1,4 +1,4 @@
-<section id="hero" class="flex justify-start items-center pl-4 lg:pl-16">
+<section id="hero" class="flex justify-start items-center pl-4 lg:pl-16"  transition-style="in:circle:top-right">
   <div>
     <h1 class="text-white text-2xl lg:text-4xl font-extrabold">
       LA CASA DE LA
@@ -34,4 +34,21 @@
       url("../hero2.jpeg");
   }
   }
+
+@import "https://unpkg.com/transition-style";
+
+@keyframes circle-in-top-right {
+  from {
+    clip-path: circle(0%);
+  }
+  to {
+    clip-path: circle(150% at top right);
+  }
+}
+
+[transition-style="in:circle:top-right"] {
+  animation: 4.0s cubic-bezier(0.95, 1, 0.3, 1) circle-in-top-right both;
+  height: 100%;
+
+}
 </style>
