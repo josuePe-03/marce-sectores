@@ -6,7 +6,7 @@ import NormasSectorSeguros from "../components/NormasSectorSeguros.astro";
 
 <Layout title="La Casa De La  Contabilidad Especializada.">
   <section id="hero" class="flex justify-start items-center pl-4 lg:pl-16">
-    <div>
+    <div class="tracking-in-expand-forward-top ">
       <h1 class="text-white font-extrabold text-4xl">Sector</h1>
       <h1
         class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl"
@@ -46,5 +46,21 @@ import NormasSectorSeguros from "../components/NormasSectorSeguros.astro";
       height: 70vh;
     }
   }
-  
+  .tracking-in-expand-forward-top {
+  animation: tracking-in-expand-forward-top 0.7s linear both;
+}
+@keyframes tracking-in-expand-forward-top {
+  0% {
+    letter-spacing: -0.2em;
+    transform: translateZ(-700px) translateY(-100px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
 </style>
